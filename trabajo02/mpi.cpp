@@ -1,6 +1,6 @@
 
-
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 #include <mpi.h>
 
 void Mat_vect_mult(
@@ -56,7 +56,6 @@ void Mat_vect_mult(
 {
 	double *x;
 	int local_i, j;
-	int local_ok = 1;
 
 	x = (double *)malloc(n * sizeof(double));
 	MPI_Allgather(local_x, local_n, MPI_DOUBLE,
