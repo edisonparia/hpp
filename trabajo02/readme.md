@@ -1,1 +1,3 @@
+Revisar el archivo pdf de este repositorio, el enviado no tiene los ultimos datos proesados
 
+Este trabajo presenta el análisis de dos ejemplos del libro "An Introduction to Parallel Programming" de Peter Pacheco. En el primero, se explora la multiplicación matriz-vector utilizando MPI, donde los datos se distribuyen entre procesos para el cálculo. En el segundo, se analizan dos implementaciones de ordenamiento odd-even transposition sort con OpenMP, considerando distribución de datos y paralelismo. Se realiza una evaluación con diferentes tamaños de datos para analizar el rendimiento de las implementaciones en función de la cantidad de los datos.
