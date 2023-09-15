@@ -1,0 +1,10 @@
+1.	A matrix addition takes two input matrices A and B and produces one output matrix C. Each element of the output matrix C is the sum of the corresponding elements of the input matrices A and B, i.e., C[i][j] = A[i][j] + B[i][j]. For simplicity, we will only handle square matrices whose elements are single-precision floating-point numbers. Write a matrix addition kernel and the host stub function that can be called with four parameters: pointer to- the-output matrix, pointer-to-the-first-input matrix, pointer-to-the-second input matrix, and the number of elements in each dimension. Follow the instructions below: 
+    A.	Write the host stub function by allocating memory for the input and output matrices, transferring input data to device; launch the kernel, transferring the output data to host and freeing the device memory for the input and output data. Leave the execution configuration parameters open for this step.
+    B.	Write a kernel that has each thread to produce one output matrix element. Fill in the execution configuration parameters for this design.
+    C.	Write a kernel that has each thread to produce one output matrix row. Fill in the execution configuration parameters for the design.
+    D.	Write a kernel that has each thread to produce one output matrix column. Fill in the execution configuration parameters for the design.
+    E.	Analyze the pros and cons of each kernel design above.
+
+   
+3. A matrix–vector multiplication takes an input matrix B and a vector C and produces one output vector A. Each element of the output vector A is the dot product of one row of the input matrix B and C, i.e., A[i] = Σj B[i][j] + C[j]. For simplicity, we will only handle square matrices whose elements are single-precision floating-point numbers. Write a matrix–vector multiplication kernel and a host stub function that can be called with four parameters: pointer-to-the-output matrix, pointer-to-the-input matrix, pointer-to-the-input vector, and the number of elements in each dimension. Use one thread to calculate an output vector element.
+   	
